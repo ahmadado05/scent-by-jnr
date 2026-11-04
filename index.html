@@ -1,73 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scent by JNR</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <style>
-	:root {
-      green: #174d3b;
-     navy-blue: #0D47A1;
-     green-dark: #0e3025;
-      gold: #d7b777;
-      cream: #faf7f0;
-      ink: #202720;
-      white: #fff; 
-      AI Green: #39FF88; 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover signature fragrances with SCENT BY JNR.">
+  <title>SCENT BY JNR </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --jnr-green: #174d3b;
+     --jnr-navy-blue: #0D47A1;
+      --jnr-green-dark: #0e3025;
+      --jnr-gold: #d7b777;
+      --jnr-cream: #faf7f0;
+      --jnr-ink: #202720;
+      --jnr-white: #fff; 
+      --jnr-AI Green: #39FF88; 
      }
-        .card-hover:hover {
-         	transform: scale(1.03);
-         	transition: transform 0.9s ease;
-            	cursor: pointer;
-}
-	.nav-link:hover {
-		transform: scale(1.03);
-		color: #d7b777;
-}
-	.brand-mark {
-		background: #d7b777;
-		padding: 3px;
-		width: 48px;
-		height: 48px;
-		object-fit: contain;
-		border-radius: 50%;
-}
-	
-	.brand-name { 
-		font-family: 'Playfair Display', Georgia, serif; 
-}
-	.navbar-brand {
-		color: #white;
-		font-family: algerian;
-}
-   
-	.navbar {
-		background: #0e3025;
-		padding: 14px;
-}
-         body { 
-		font-family:  'DM Sans', sans-serif; 
-		color: #202720; 
-		background: #ffff;
-} 
-	.about-section {
-		background: #faf7f0;
-}
-	.card-info {
-		background: #ffffff;
-		padding: 30px 25px;
-		border-radius: 12px;
-		border: 1px solid #eee7d9;
-}
-	.card-info h5 {
-		font-weight: bold;
-		color: #174d3b;
-		margin-bottom: 14px;
-} 
+    * { box-sizing: border-box; }
+    body { font-family: 'DM Sans', sans-serif; color: var(--jnr-ink); background: #fff; }
+    h1, h2, h3, .brand-name { font-family: 'Playfair Display', Georgia, serif; }
+    .navbar { background: var(--jnr-green-dark); padding: 14px 0; }
+    .brand-mark { width: 48px; height: 48px; object-fit: contain; border-radius: 50%; background: #d7b777; padding: 3px; }
+    .brand-name { color:#fff; font-size: 1.35rem; letter-spacing: .04em; line-height: 1.1; }
+    .brand-subtitle { color: #e4d6b7; font-size: .68rem; letter-spacing: .22em; text-transform: uppercase; }
+    .navbar .nav-link { color: rgba(255,255,255,.82); font-weight: 500; margin-left: 12px; }
+    .navbar .nav-link:hover, .navbar .nav-link.active { color: var(--jnr-gold); }
+    .nav-cta { border: 1px solid var(--jnr-gold); border-radius: 30px; padding: 8px 18px !important; color: #fff !important; }
+    .nav-cta:hover { background: var(--jnr-gold); color: var(--jnr-green-dark)  !important; }
+
+    <-- Premium image slider section -->
+    .hero-slider { background: var(--jnr-green-dark); }
+    .hero-slider .carousel-item { height: clamp(420px, 68vh, 680px); position: relative; }
+    .hero-slider .carousel-item::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,24,18,.82) 0%, rgba(8,24,18,.48) 48%, rgba(8,24,18,.08) 100%); }
+    .hero-slider .carousel-item img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .hero-caption { position: absolute; z-index: 2; top: 50%; left: max(9%, calc((100% - 1140px)/2)); right: 12%; transform: translateY(-50%); color: #fff; max-width: 610px; text-align: left; bottom: auto; }
+    .eyebrow { color: var(--jnr-gold); font-size: .76rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; margin-bottom: 18px; }
+    .hero-caption h1, .hero-caption h2 { font-size: clamp(2.5rem, 5vw, 4.8rem); line-height: 1.05; margin-bottom: 20px; }
+    .hero-caption p { font-size: clamp(1rem, 1.5vw, 1.15rem); line-height: 1.8; max-width: 500px; color: rgba(255,255,255,.88); }
+    .btn-gold { display: inline-block; background: var(--jnr-gold); color: #18291f; border: 1px solid var(--jnr-gold); border-radius: 30px; padding: 12px 25px; font-weight: 700; text-decoration: none; transition: .25s ease; }
+    .btn-gold:hover { background: #f0d59b; border-color: #f0d59b; color: #18291f; transform: translateY(-2px); }
+    .hero-slider .carousel-control-prev, .hero-slider .carousel-control-next { z-index: 3; width: 8%; }
+    .hero-slider .carousel-control-prev-icon, .hero-slider .carousel-control-next-icon { background-color: rgba(15,48,37,.72); background-size: 48%; border: 1px solid rgba(255,255,255,.35); border-radius: 50%; width: 48px; height: 48px; }
+    .hero-slider .carousel-indicators { z-index: 3; margin-bottom: 24px; }
+    .hero-slider .carousel-indicators [data-bs-target] { width: 26px; height: 4px; border: 0; border-radius: 4px; }
+    .hero-slider .carousel-indicators .active { background-color: var(--jnr-gold); }
+    .slider-note { background: var(--jnr-green); color: #fff; padding: 14px 16px; text-align: center; font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; }
+    .slider-note span { color: var(--jnr-gold); margin: 0 12px; }
+
+    .section-kicker { color: #8b6c35; font-size: .75rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+    .section-title { font-size: clamp(2rem, 4vw, 3.1rem); color: var(--jnr-green-dark); }
+    .about-section { background: var(--jnr-cream); }
+    .info-card { height: 100%; padding: 30px 25px; background: #fff; border: 1px solid #eee7d9; border-radius: 16px; box-shadow: 0 10px 30px rgba(23,77,59,.045); }
+    .info-card h3 { font-size: 1.35rem; color: var(--jnr-green); margin-bottom: 14px; }
+    .info-card p, .info-card li { color: #626960; line-height: 1.8; }
+    .value-list { list-style: none; padding-left: 0; margin-bottom: 0; }
+    .value-list li { margin-bottom: 7px; }
+    .value-list strong { color: var(--jnr-green); }
+
+    .management-section {
+		background: #F8F9FA;
+		
+	}
 	
 	.management-card {
-		background: #ffffff;
+		background: white;
 		padding: 25px;
 		text-align: center;
 		border-radius: 12px;
@@ -76,12 +74,8 @@
 		transition: 0.3s;
 }
 
-
-	.management-card h2 {
-		font-family: Courier New;
-		color: #0e3025;
-		font-weight: bold;
-		font-size: clamp(2rem, 4vw, 3.1rem);
+	.management-card:hover {
+		transform: translateY(-8px);
 }
 
 	.manager-card img {
@@ -90,15 +84,15 @@
 		border-radius: 50px;
 		object-fit: cover;
 		margin-botton: 20px;
-		border: 4px solid #0d47a1;
+		border: 4px solid #174d3b;
 }
 
-	.manager-card h6 {
-		font-weight: bold;
+	.manager-card h4 {
+		font-weight: 700;
 }
 
 	.manager-card span {
-		color: #0d47a1;
+		color: #174d3b;
 		font-weight: 600;
 		font-family: algerian;
 }
@@ -108,193 +102,303 @@
 		color: #666;
 }
 
-	.footer {
-		background: ;
-		padding:;
-}
-	.footer p {
-		color: #d7b777;
-		font-weight: bold;
-}
-	</style>
-  	  </head>
-    	    <body>
 
-<!-- Navbar -->
-     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-	    <img src="logo.png" alt="JNR logo" class="brand-mark";>
-	       <a class="navbar-brand ms-2" href="#">SCENT BY JNR</a>
-	          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavn" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                        </button>
-						   
-<div class="collapse navbar-collapse" id="navbarNav">
-   <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a></li>
-         <li class="nav-item"><a class="nav-link" href="#about">AboutUs</a></li>
-            <li class="nav-item"><a class="nav-link" href="#management">Management</a></li>
-               <li class="nav-item"><a class="nav-link" href="#footer">contactUs</a></li></ul>
-                  </div>
-                     </nav>
-					   </section>
-				
-<!-- Slider Section -->
-     <div id="homepageSlider" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="300">
-        <div class="carousel-inner">
-
-<!-- First Image -->
-     <div class="carousel-item active">
-        <img src="jnr.png" class="d-block w-100" alt="First homepage Image" style="height: 450px; object-fit: cover;"> 
-           </div>
-
-<!-- Second Image -->
-     <div class="carousel-item active">
-        <img src="tirare.png" class="d-block w-100" alt="second homepage Image" style="height: 450px; object-fit: cover;"> 
-          </div> 
-
-<!-- Third Image -->
-     <div class="carousel-item active">
-        <img src="image3.png" class="d-block w-100" alt="third homepage Image" style="height: 450px; object-fit: cover;"> 
-          </div>
-  	
-<!-- Forth Image -->
-     <div class="carousel-item active">
-        <img src="image4.png" class="d-block w-100" alt="forth homepage Image" style="height: 450px; object-fit: cover;"> 
-          </div>
-  
-<!-- Fifth Image -->
-     <div class="carousel-item active">
-        <img src="image5.png" class="d-block w-100" alt="fifth homepage Image" style="height: 450px; object-fit: cover;"> 
-           </div>
- 
-<!-- Sixth Image -->
-     <div class="carousel-item active">
-        <img src="image6.png" class="d-block w-100" alt="sixth homepage Image" style="height: 450px; object-fit: cover;"> 
-            </div>
-               </div> 
-
-<!-- Previous Button -->
-     <button class="carousel-control-prev" type="button" data-bs-target="#homepageSlider" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-           <span class="visually-hidden">Previous</span>
-              </button>
-
-<!-- Next Button -->
-    <button class="carousel-control-next" type="button" data-bs-target="#homepageSlider" data-bs-slide="next">
-       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-             </button>
-                </div>
-
-<!-- About Section with Business Mission, Vision, and Core Value -->
-     <section id="about" class="about-section py-5">
-        <div class="container">
-           <h2 class="text-center mb-4">About Our Business</h2>
-              <p class="lead text-center mb-5">
-                  at SCENT BY JNR,Every bottle tells a strory, and Every Scent creates memory.Let us help you discover the perfect fragrance that speaks for you.
-                     </p>
-
-<div class="row text-center">
-   <div class="card-info col-md-4 mb-4">
-      <h5 class="fw-bold">Business Mission</h5>
-         <p class="text-muted">
-            To provide authentic, long-lasting, and affordable perfumes while delivering excelent customer service, building lasting relationships, and ensuring every customer finds a fragrance that matches their personality and life style.
-	       </p>
-                  </div>
-
-<div class="card-info col-md-4 mb-4">
-   <h5 class="fw-bold">Vision</h5>
-      <p class="text-muted">
-         To become a trusted and leading fragrance brand, offring premium-quality perfumes that inspire confidence, elegance, and lasting memories for every customer
-            </p>
-               </div>	
-
-<div class="card-info col-md-4 mb-4">
-   <h5 class="fw-bold">Core Values</h5>
-      <p class="text-muted">
-         <class="card">
-            <strong>.Quality-</strong> We offer only high-quality and long-lasting fragrances.<br>
-	       <strong>.Authencity-</strong> We are committed to selling genuine products.<br>
-	          <strong>.Customer Stisfaction-</strong> Our customers hapiness is our top priority.<br>
-	             <strong>.Integrity-</strong> We conduct our business with honesty, transparency, and fairness.
-		     </p>
-                        </div>
-	                   </section>
 	
-<!-- Management Section -->
-     <section id="management" class="management-card py-5">
-        <div class="container">
-           <div class="text-center">
-              <h2>MANAGEMENT TEAM</h2>
-                 </div>
-                    </div>
+	.contact-section {
+		background: #F5EDE0;
+		pading: 60px 20px;
+		height: 100%;
+		border-radius: 12px;
+}
+	.contact-info,
+	contact-form {
+		background: #f8f9fa;
+		padding: 30px;
+		border-radius: 12px;
+		height: 100%;
+}
+	.contact-item {
+		margin-top: 25px;
+}
+	.contact-item h5 {
+		font-weight: 700;
+}
+	.contact-item p {
+		color: 666;
+}
+	.contact-form .form-control {
+		padding: 17px;
+		border-radius: 7px;
+}
+	.contact-form .form-control:focus {
+		border-color: #0d47a1;
+		box-shadow: 0 0 5px rgba(13,17,161,0.3);
+}
+	.contact-btn {
+		background: #f0d59b;
+		color: #18291f;
+		padding: 12px 25px;
+		border-radius: 30px;
+		border: 1px solid var(--jnr-gold);
+		font-weight: 700;
+}
+	.contact-btn:hover {
+		background: #d7b777;
+		color: #f0d59b;
+		border-color: #f0d59b;
+}
+	.social-links a{
+		display: inline-block;
+		color: #e03025;
+		margin:5px;
+		padding: 7px 10px;
+		border: 1px solid #777;
+		border-radius: 5px
+}
+	.social-links a:hover {
+		background: #d7b777;
+}
 
-<div class="row g-4 justify-content-center">
-   <!-- Team Member 1 -->
-      <div class="col-md-3">
-         <div class="manager-card">
-           <img src="ceo.jpg" alt="ceo" class="team-img">
-              <h6 class="mt-2">Garba Hauwa L</h6>
-	         <span>Chief Executive Officer(CEO).</span>
-                    <p class="text-muted">
-                       provides ovrrall leardership and strategic direction, ensuring that the company achieves its goal and
-		          maintain its vision.
-                             </p>
-             		        </div>
-				   </div>
+   .site-footer strong { color: #fff; font-family: 'Playfair Display', Georgia, serif; letter-spacing: .04em; }
+    	.site-footer {
+		background: #0e3025;
+		color: #d7b777;
+		padding: 16px;
+}
+	
+	
+	
+  </style>
+</head>
+<body>
 
-<!-- Team Member 2 -->
-     <div class="col-md-3">
-        <div class="manager-card">
-           <img src="nami2.png" alt="OM" class="team-img">
-              <h6 class="mt-2">Ahmad Aliyu</h6>
-	         <span>Operations Manager.</span>
-                    <p class="text-muted">
-                       Oversees daily business activities, coordinates operations, and ensures that orders and services
-                          are handled efficiently.
-                             </p>
-                                </div>
-	                           </div>
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-3" href="index.php" aria-label="SCENT BY JNR home">
+      <img src="logo.png" alt="SCENT BY JNR logo" class="brand-mark" onerror="this.style.display='none'">
+      <span><span class="brand-name d-block">SCENT BY JNR</span><span class="brand-subtitle">Fragrance • Elegance • Memories</span></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNavigation">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#management">Management</a></li>
+	<li class="nav-item"><a class="nav-link nav-cta" href="#contact us">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<!-- Team Member 3 -->
-     <div class="col-md-3">
-        <div class="manager-card">
-           <img src="manager2.png" alt="SMM" class="team-img">
-              <h6 class="mt-2">Bashir Hassan</h6>
-	         <span>Sales and Marketing Manager.</span>
-                    <p class="text-muted">
-                        Develops marketing strategies, promotes our products, and works to build strong relationship
-                           with customers.
-                              </p>
-                                 </div>
-	                            </div>
+<!-- Premium fragrance image slider. Keep only the first carousel-item active. -->
+<section class="hero-slider" aria-label="SCENT BY JNR featured fragrances">
+  <div id="homepageSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#homepageSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#homepageSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#homepageSlider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#homepageSlider" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#homepageSlider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#homepageSlider" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#homepageSlider" data-bs-slide-to="6" aria-label="Slide 7"></button>
+    </div>
 
-<!-- Team Member 4 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="jnr.png" alt="SCENT BY JNR signature fragrance" fetchpriority="high">
+        <div class="hero-caption">
+          <div class="eyebrow">Find your signature scent</div>
+          <h1>Make every moment unforgettable.</h1>
+          <p>Discover fragrances that express your personality, elevate your presence, and leave a beautiful impression.</p>
+          <a class="btn-gold" href="#about">Discover Our Story</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="tirare.png" alt="Featured fragrance collection" loading="lazy">
+        <div class="hero-caption">
+          <div class="eyebrow">Elegance in every drop</div>
+          <h2>A fragrance that feels like you.</h2>
+          <p>From everyday freshness to special-occasion elegance, find a scent that suits your style.</p>
+          <a class="btn-gold" href="#about">Explore SCENT BY JNR</a>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="image3.png" alt="SCENT BY JNR fragrance selection three" loading="lazy">
+        <div class="hero-caption"><div class="eyebrow">Your style, your scent</div><h2>Let your presence linger.</h2><p>Beautiful fragrances help turn ordinary moments into lasting memories.</p><a class="btn-gold" href="#about">Our Promise</a></div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="image4.png" alt="SCENT BY JNR fragrance selection four" loading="lazy">
+        <div class="hero-caption"><div class="eyebrow">Confidence begins here</div><h2>Wear the feeling. Own the moment.</h2><p>Find a fragrance that makes you feel confident, polished, and unmistakably yourself.</p><a class="btn-gold" href="#about">Meet Our Brand</a></div>
+      </div>
+      <div class="carousel-item">
+        <img src="image5.png" alt="SCENT BY JNR fragrance selection five" loading="lazy">
+        <div class="hero-caption"><div class="eyebrow">Thoughtfully selected</div><h2>Little details. Lasting impressions.</h2><p>We believe the right fragrance can become part of your personal story.</p><a class="btn-gold" href="#management">Meet Our Team</a></div>
+      </div>
+      <div class="carousel-item">
+        <img src="image6.png" alt="SCENT BY JNR fragrance selection six" loading="lazy">
+        <div class="hero-caption"><div class="eyebrow">Welcome to SCENT BY JNR</div><h2>Your next favourite scent awaits.</h2><p>Step into a world of fragrance, character, and unforgettable memories.</p><a class="btn-gold" href="#about">Learn About Us</a></div>
+      </div>
+      <div class="carousel-item">
+        <img src="image7.png" alt="SCENT BY JNR fragrance selection seven" loading="lazy">
+        <div class="hero-caption"><div class="eyebrow">We are not first but we are giving the first product</div><h2>Smell nice with us.</h2><p>Find a fragrance that makes you feel confident, polished, and unmistakably yourself.</p><a class="btn-gold" href="#about">Learn More</a></div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#homepageSlider" data-bs-slide="prev" aria-label="Previous slide"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+    <button class="carousel-control-next" type="button" data-bs-target="#homepageSlider" data-bs-slide="next" aria-label="Next slide"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+  </div>
+  <div class="slider-note">Discover your signature scent <span>✦</span> Make memories that last</div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section py-5">
+  <div class="container py-lg-4">
+    <div class="text-center mb-5">
+      <div class="section-kicker mb-3">The story behind the scent</div>
+      <h2 class="section-title mb-3">Welcome to SCENT BY JNR</h2>
+      <p class="lead mx-auto mb-0" style="max-width: 780px; color: #626960; line-height: 1.8;">Every bottle tells a story, and every scent creates a memory. Let us help you discover the perfect fragrance that speaks for you.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4"><article class="info-card"><h3>Our Mission</h3><p class="mb-0">To provide authentic, long-lasting, and affordable perfumes while delivering excellent customer service, building lasting relationships, and helping every customer find a fragrance that matches their personality and lifestyle.</p></article></div>
+      <div class="col-md-4"><article class="info-card"><h3>Our Vision</h3><p class="mb-0">To become a trusted and leading fragrance brand, offering quality perfumes that inspire confidence, elegance, and lasting memories for every customer.</p></article></div>
+      <div class="col-md-4"><article class="info-card"><h3>Our Core Values</h3><ul class="value-list"><li><strong>Quality:</strong> High-quality, lasting fragrances.</li><li><strong>Authenticity:</strong> A commitment to genuine products.</li><li><strong>Customer care:</strong> Customers come first.</li><li><strong>Integrity:</strong> Honesty, transparency, and fairness.</li></ul></article></div>
+    </div>
+  </div>
+</section>
+
+<!-- management section -->
+<section id="management" class="management-section py-5">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-kicker mb-3">The people behind the brand</div>
+      <h2 class="section-title mb-3">Meet Our Management</h2>
+      <p class="management-intro">Behind every great fragrance is a commitment to quality, customer care, and attention to detail. Our management team works to make every SCENT BY JNR experience special.</p>
+    </div>
+<div class="row g-4 justify text-center">
+<!-- Team Member 1 -->
      <div class="col-md-3">
 	<div class="manager-card">
-           <img src="manager3.jpg" alt="FMS" class="team-img">
-              <h6 class="mt-2">Munir Aliyu</h6>
-	         <span>Finance Manager</span>
-        	    <p class="text-muted">
-      		       Oversees financial activities, budgeting, and proper management of the company`s financial resources.
-                          </p>
-     			     </div>
-	                        </div>
+      <img src="ceo.jpg" alt="SCENT BY JNR management representative" class="management-photo" loading="lazy">
+       <h6 class="mt-2">Garba Hauwa L</h6>
+	<span>Chief Executive Officer(CEO).</span>
+        <p class="text-muted">
+provides ovrrall leardership and strategic direction, ensuring that the company achieves its goal and
+maintain its vision.
+</p>
+      </div>
+	</div>
+        
 
-<h2>Our Commitment</h2>
-   <p>Together,
-      <br> we are commited to building a trusted brand 
-         <br> that puts customers first,
-	    <br> delivers quality products,
-	       <br>and create a convenient online shoping expeience.
-	          </p>
-                     </section>
+<!-- Team Member 2 -->
+	<div class="col-md-3">
+	<div class="manager-card">
+        <img src="nami2.png" alt="CEO" class="team-img">
+        <h6 class="mt-2">Ahmad Aliyu</h6>
+	<span>Operations Manager.</span>
+        <p class="text-muted">
+Oversees daily business activities, coordinates operations, and ensures that orders and services
+are handled efficiently.
+</p>
+      </div>
+	</div>
 
-<div class="footer">
-   <section id="footer" class="footer">
-      <a href="index">
-         <div class="text-center"</div>
-            <P>@scent</p>
-               </div>
-	
+		<!-- Team Member 3 -->
+	<div class="col-md-3">
+	<div class="manager-card">
+        <img src="manager2.png" alt="vc" class="team-img">
+        <h6 class="mt-2">Bashir Hassan</h6>
+	<span>Sales and Marketing Manager.</span>
+        <p class="text-muted">
+Develops marketing strategies, promotes our products, and works to build strong relationship
+with customers.
+</p>
+      </div>
+	</div>
+
+		<!-- Team Member 4 -->
+	<div class="col-md-3">
+	<div class="manager-card">
+        <img src="manager3.jpg" alt="vc" class="team-img">
+        <h6 class="mt-2">Munir Aliyu</h6>
+	<span>Finance Manager</span>
+        <p class="text-muted">
+Oversees financial activities, budgeting, and proper management of the company`s financial
+resources.
+</p>
+      </div>
+	</div>
+	<h2>Our Commitment</h2>
+	  <p>Together,
+	     <br> we are commited to building a trusted brand 
+	        <br> that puts customers first,
+		    <br> delivers quality products,
+	     		<br>and create a convenient online shoping expeience.
+	     		    </p>
+</section>
+
+
+<!-- Contact Us SECTION -->
+<div class="container">
+<section id="contact us" class="contact-section py-5">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title">Contact Us</h2>
+            <p>We would love to hear from you. Get in touch with us today!</p>
+        </div>
+</div>
+        <div class="row g-4">
+
+            <!-- Contact Information -->
+            <div class="col-md-5">
+
+                <div class="contact-info">
+
+                    <h3>Get In Touch</h3>
+
+                    <p>
+                        Have questions about our products or services?
+                        Our team is always ready to assist you.
+                    </p>
+
+                    <div class="contact-item">
+                        <h5>📞 Phone</h5>
+                        <a href=""><p>+234 8105866593</p></a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h5>📧 Email</h5>
+                        <p>info@scentByJNR@gmail.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h5>📍 Location</h5>
+                        <a href="https://maps.app.goo.gl/QHMtXsKtrd5rKfpR9"><p>Yabo Local Government, sokoto state, Nigeria</p></a>
+                    </div>
+
+                    <div class="contact-item">
+                        <h5>🕒 Business Hours</h5>
+                        <p>Monday - sunday: 8AM - 6PM</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <footer id="footer" class="site-footer">
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-2 text-center text-md-start">
+    <div><strong>SCENT BY JNR</strong><div class="small">Fragrance • Elegance • Memories</div>
+</div>
+    <div class="small">&copy; <span id="currentYear"></span> SCENT BY JNR. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
