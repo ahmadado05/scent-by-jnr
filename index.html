@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scent by JNR</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <style>
+	:root {
+      green: #174d3b;
+     navy-blue: #0D47A1;
+     green-dark: #0e3025;
+      gold: #d7b777;
+      cream: #faf7f0;
+      ink: #202720;
+      white: #fff; 
+      AI Green: #39FF88; 
+     }
+        .card-hover:hover {
+         	transform: scale(1.03);
+         	transition: transform 0.9s ease;
+            	cursor: pointer;
+}
+	.nav-link:hover {
+		transform: scale(1.03);
+		color: #d7b777;
+}
+	.brand-mark {
+		background: #d7b777;
+		padding: 3px;
+		width: 48px;
+		height: 48px;
+		object-fit: contain;
+		border-radius: 50%;
+}
+	
+	.brand-name { 
+		font-family: 'Playfair Display', Georgia, serif; 
+}
+	.navbar-brand {
+		color: #white;
+		font-family: algerian;
+}
+   
+	.navbar {
+		background: #0e3025;
+		padding: 14px;
+}
+         body { 
+		font-family:  'DM Sans', sans-serif; 
+		color: #202720; 
+		background: #ffff;
+} 
+	.about-section {
+		background: #faf7f0;
+}
+	.card-info {
+		background: #ffffff;
+		padding: 30px 25px;
+		border-radius: 12px;
+		border: 1px solid #eee7d9;
+}
+	.card-info h5 {
+		font-weight: bold;
+		color: #174d3b;
+		margin-bottom: 14px;
+} 
+	
+	.management-card {
+		background: #ffffff;
+		padding: 25px;
+		text-align: center;
+		border-radius: 12px;
+		box-shadow: 0 4px 15px rgba(0,0,0,0,0.8);
+		height: 100%;
+		transition: 0.3s;
+}
+
+
+	.management-card h2 {
+		font-family: Courier New;
+		color: #0e3025;
+		font-weight: bold;
+		font-size: clamp(2rem, 4vw, 3.1rem);
+}
+
+	.manager-card img {
+		width: 200px;
+		hight: 200px;
+		border-radius: 50px;
+		object-fit: cover;
+		margin-botton: 20px;
+		border: 4px solid #0d47a1;
+}
+
+	.manager-card h6 {
+		font-weight: bold;
+}
+
+	.manager-card span {
+		color: #0d47a1;
+		font-weight: 600;
+		font-family: algerian;
+}
+
+	.manager-card p {
+		margin-top: 15px;
+		color: #666;
+}
+
+	.footer {
+		background: ;
+		padding:;
+}
+	.footer p {
+		color: #d7b777;
+		font-weight: bold;
+}
+	</style>
+  	  </head>
+    	    <body>
+
+<!-- Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+	    <img src="upload/logo.png" alt="JNR logo" class="brand-mark";>
+	       <a class="navbar-brand ms-2" href="#">SCENT BY JNR</a>
+	          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavn" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                        </button>
+
+<div class="collapse navbar-collapse" id="navbarNav">
+   <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.php">Home</a></li>
+         <li class="nav-item"><a class="nav-link" href="#about">AboutUs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#management">Management</a></li>
+               <li class="nav-item"><a class="nav-link" href="#footer">contactUs</a></li></ul>
+                  </div>
+                     </nav>
+
+<!-- Slider Section -->
+     <div id="homepageSlider" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="300">
+        <div class="carousel-inner">
+
+<!-- First Image -->
+     <div class="carousel-item active">
+        <img src="upload/jnr.png" class="d-block w-100" alt="First homepage Image" style="height: 450px; object-fit: cover;"> 
+           </div>
+
+<!-- Second Image -->
+     <div class="carousel-item active">
+        <img src="upload/tirare.png" class="d-block w-100" alt="second homepage Image" style="height: 450px; object-fit: cover;"> 
+          </div> 
+
+<!-- Third Image -->
+     <div class="carousel-item active">
+        <img src="upload/image3.png" class="d-block w-100" alt="third homepage Image" style="height: 450px; object-fit: cover;"> 
+          </div>
+  	
+<!-- Forth Image -->
+     <div class="carousel-item active">
+        <img src="image4.png" class="d-block w-100" alt="forth homepage Image" style="height: 450px; object-fit: cover;"> 
+          </div>
+  
+<!-- Fifth Image -->
+     <div class="carousel-item active">
+        <img src="upload/image5.png" class="d-block w-100" alt="fifth homepage Image" style="height: 450px; object-fit: cover;"> 
+           </div>
+ 
+<!-- Sixth Image -->
+     <div class="carousel-item active">
+        <img src="upload/image6.png" class="d-block w-100" alt="sixth homepage Image" style="height: 450px; object-fit: cover;"> 
+            </div>
+               </div> 
+
+<!-- Previous Button -->
+     <button class="carousel-control-prev" type="button" data-bs-target="#homepageSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+              </button>
+
+<!-- Next Button -->
+    <button class="carousel-control-next" type="button" data-bs-target="#homepageSlider" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+             </button>
+                </div>
+
+<!-- About Section with Business Mission, Vision, and Core Value -->
+     <section id="about" class="about-section py-5">
+        <div class="container">
+           <h2 class="text-center mb-4">About Our Business</h2>
+              <p class="lead text-center mb-5">
+                  at SCENT BY JNR,Every bottle tells a strory, and Every Scent creates memory.Let us help you discover the perfect fragrance that speaks for you.
+                     </p>
+
+<div class="row text-center">
+   <div class="card-info col-md-4 mb-4">
+      <h5 class="fw-bold">Business Mission</h5>
+         <p class="text-muted">
+            To provide authentic, long-lasting, and affordable perfumes while delivering excelent customer service, building lasting relationships, and ensuring every customer finds a fragrance that matches their personality and life style.
+	       </p>
+                  </div>
+
+<div class="card-info col-md-4 mb-4">
+   <h5 class="fw-bold">Vision</h5>
+      <p class="text-muted">
+         To become a trusted and leading fragrance brand, offring premium-quality perfumes that inspire confidence, elegance, and lasting memories for every customer
+            </p>
+               </div>	
+
+<div class="card-info col-md-4 mb-4">
+   <h5 class="fw-bold">Core Values</h5>
+      <p class="text-muted">
+         <class="card">
+            <strong>.Quality-</strong> We offer only high-quality and long-lasting fragrances.<br>
+	       <strong>.Authencity-</strong> We are committed to selling genuine products.<br>
+	          <strong>.Customer Stisfaction-</strong> Our customers hapiness is our top priority.<br>
+	             <strong>.Integrity-</strong> We conduct our business with honesty, transparency, and fairness.
+		     </p>
+                        </div>
+	                   </section>
+	
+<!-- Management Section -->
+     <section id="management" class="management-card py-5">
+        <div class="container">
+           <div class="text-center">
+              <h2>MANAGEMENT TEAM</h2>
+                 </div>
+                    </div>
+
+<div class="row g-4 justify-content-center">
+   <!-- Team Member 1 -->
+      <div class="col-md-3">
+         <div class="manager-card">
+           <img src="upload/ceo.jpg" alt="ceo" class="team-img">
+              <h6 class="mt-2">Garba Hauwa L</h6>
+	         <span>Chief Executive Officer(CEO).</span>
+                    <p class="text-muted">
+                       provides ovrrall leardership and strategic direction, ensuring that the company achieves its goal and
+		          maintain its vision.
+                             </p>
+             		        </div>
+				   </div>
+
+<!-- Team Member 2 -->
+     <div class="col-md-3">
+        <div class="manager-card">
+           <img src="upload/nami2.png" alt="OM" class="team-img">
+              <h6 class="mt-2">Ahmad Aliyu</h6>
+	         <span>Operations Manager.</span>
+                    <p class="text-muted">
+                       Oversees daily business activities, coordinates operations, and ensures that orders and services
+                          are handled efficiently.
+                             </p>
+                                </div>
+	                           </div>
+
+<!-- Team Member 3 -->
+     <div class="col-md-3">
+        <div class="manager-card">
+           <img src="upload/manager2.png" alt="SMM" class="team-img">
+              <h6 class="mt-2">Bashir Hassan</h6>
+	         <span>Sales and Marketing Manager.</span>
+                    <p class="text-muted">
+                        Develops marketing strategies, promotes our products, and works to build strong relationship
+                           with customers.
+                              </p>
+                                 </div>
+	                            </div>
+
+<!-- Team Member 4 -->
+     <div class="col-md-3">
+	<div class="manager-card">
+           <img src="upload/manager3.jpg" alt="FMS" class="team-img">
+              <h6 class="mt-2">Munir Aliyu</h6>
+	         <span>Finance Manager</span>
+        	    <p class="text-muted">
+      		       Oversees financial activities, budgeting, and proper management of the company`s financial resources.
+                          </p>
+     			     </div>
+	                        </div>
+
+<h2>Our Commitment</h2>
+   <p>Together,
+      <br> we are commited to building a trusted brand 
+         <br> that puts customers first,
+	    <br> delivers quality products,
+	       <br>and create a convenient online shoping expeience.
+	          </p>
+                     </section>
+
+<div class="footer">
+   <section id="footer" class="footer">
+      <a href="index">
+         <div class="text-center"</div>
+            <P>@scent</p>
+               </div>
+	
